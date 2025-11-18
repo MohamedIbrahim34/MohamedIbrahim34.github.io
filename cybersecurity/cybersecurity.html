@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Security Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cybersecurity.css" />
+</head>
+<body>
+    <a href="../index.html#projects" class="back-button">&#8592; Back to Home</a>
+  <div class="container">
+    <h1>Cyber Security Project</h1>
+
+   <section>
+    <div class="image-gallery"> 
+  <h2>1) Phishing Attack</h2>
+  <p>
+    I have created the phishing attack login page — it’s the login page of the social media app <span class="highlight">Snapchat</span>. When the user enters the password and email address and tries to sign in, the credentials will be captured in the <span class="highlight">AWS Console</span>. After login, the user sees an acknowledgement page showing “<span class="highlight">502 Bad Gateway</span>”.
+  </p>
+  <img src="images/Screenshot 2025-06-26 214008.png" alt="Phishing Attack Screenshot" class="cyber-img" />
+   <p class="img-caption">Snap Chat login page </p>
+  <img src="images/Screenshot 2025-06-26 214017.png" alt="Phishing Attack Screenshot" class="cyber-img" />
+  <p class="img-caption">Acknowledgement page 502 Bad Gateway</p>
+  <img src="images/Screenshot 2025-06-26 214028.png" alt="Phishing Attack Screenshot" class="cyber-img" />
+  <p class="img-caption">Password captured in AWS console</p>
+</section>
+
+<section>
+  <div class="image-gallery"> 
+  <h2>2) VPN Server Setup</h2>
+  <p>
+    The VPN server setup involves creating two EC2 instances — one for the VPN server and one for the app server. The login page's IP address won't run on the browser of the machine used to create these instances. It must be run on the <span class="highlight">RDP setup window</span>.
+  </p>
+  <img src="images/Screenshot 2025-06-26 215535.png" alt="VPN Server Screenshot" class="cyber-img" />
+  <p class="img-caption">The login page runs on RDP window</p>
+  <img src="images/Screenshot 2025-06-26 215542.png" alt="VPN Server Screenshot" class="cyber-img" />
+  <p class="img-caption">The login page that doesn’t run on actual windows browser</p>
+  
+</section>
+
+<section>
+  <div class="image-gallery"> 
+  <h2>3) Load Balancer</h2>
+  <p>
+    Two instances are created named <span class="highlight">serverone</span> and <span class="highlight">servertwo</span>. A <span class="highlight">load balancer</span> named <span class="highlight">serveronetwo</span> balances the load between them. The two login pages are combined, and when we press <span class="highlight">CTRL + R</span>, they switch.
+  </p>
+  <img src="images/Screenshot 2025-06-26 215846.png" alt="Load Balancer Screenshot" class="cyber-img" />
+  <p class="img-caption">Login page of serverone</p>
+  <img src="images/Screenshot 2025-06-26 215855.png" alt="Load Balancer Screenshot" class="cyber-img" />
+  <p class="img-caption">Login page of servertwo </p>
+</section>
+
+  <div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="Enlarged Image">
+  <div class="nav prev">&#10094;</div>
+  <div class="nav next">&#10095;</div>
+</div>
+
+<script src="cybersecurity.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aqua Project – ML-Based Fish Detection</title>
+  <link rel="stylesheet" href="aqua.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="../index.html#projects" class="back-button">&#8592; Back to Home</a>
+  <div class="container">
+    <h1>🐟 Aqua Project – ML-Based Fish Detection & Analysis System</h1>
+
+    <section>
+      <h2 class="emoji">📌 Project Overview</h2>
+      <p>
+        The Aqua Project is a smart AI-powered fish detection and analysis platform designed for aquaculture applications.
+        This system leverages computer vision and machine learning to automate the identification and estimation of fish
+        species, height, weight, and other biological parameters from images. It minimizes manual effort, enhances
+        accuracy, and supports sustainable fisheries and research initiatives.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="emoji">🎯 Project Objectives</h2>
+      <ul>
+        <li>Automate fish species classification from uploaded images.</li>
+        <li>Estimate biological attributes like height and weight using AI.</li>
+        <li>Provide a real-time, user-friendly web application.</li>
+        <li>Enable modular upgrades (e.g., live video input, cloud storage).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="emoji">🧠 Tech Stack Used</h2>
+      <table>
+        <tr><th>Area</th><th>Technologies</th></tr>
+        <tr><td>ML Model</td><td>Python, Ultralytics YOLOv8, TensorFlow</td></tr>
+        <tr><td>Web Frontend</td><td>HTML, CSS, JavaScript</td></tr>
+        <tr><td>UI/UX Design</td><td>Figma</td></tr>
+        <tr><td>Web Backend</td><td>Python, Streamlit</td></tr>
+        <tr><td>APIs</td><td>RESTful APIs for image upload and predictions</td></tr>
+        <tr><td>Tools/Platforms</td><td>MakeSense AI, Roboflow, GitHub</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2 class="emoji">🧩 System Modules</h2>
+      <ul>
+        <li><strong>Data Preprocessing</strong><br/>
+          - Image normalization, annotation parsing, dataset formatting</li>
+        <li><strong>Model Training</strong><br/>
+          - YOLOv8-based model, custom-labeled fish dataset, hyperparameter tuning</li>
+        <li><strong>Model Evaluation</strong><br/>
+          - Accuracy, Precision, Recall, F1-Score</li>
+        <li><strong>Web Integration</strong><br/>
+          - Backend via Streamlit, real-time API predictions</li>
+        <li><strong>Frontend UI</strong><br/>
+          - Responsive UI using HTML/CSS/JS, based on Figma prototype</li>
+        <li><strong>Prediction Module</strong><br/>
+          - Upload → Detect → Display (Species, Height, Weight)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="emoji">🔄 Workflow</h2>
+      <ol>
+        <li>Collect fish images and annotate them</li>
+        <li>Preprocess and clean data</li>
+        <li>Train YOLOv8 model</li>
+        <li>Evaluate performance</li>
+        <li>Deploy model via Streamlit</li>
+        <li>Predict fish class, height, weight via frontend</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="emoji">🚀 Key Features</h2>
+      <ul>
+        <li>Real-time fish image classification</li>
+        <li>Biological predictions (size & weight)</li>
+        <li>Lightweight, responsive design</li>
+        <li>Modular design for future add-ons</li>
+        <li>Offline/local deployment capable</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="emoji">📈 Future Enhancements</h2>
+      <ul>
+        <li>Live video stream detection</li>
+        <li>Cloud storage for prediction history</li>
+        <li>IoT sensor integration for real-time monitoring</li>
+        <li>Add more fish species to dataset</li>
+        <li>Mobile app version</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="emoji">⚠️ Risk Analysis</h2>
+      <ul>
+        <li><strong>Data Risk:</strong> Incomplete or biased dataset</li>
+        <li><strong>Model Risk:</strong> Overfitting on limited species</li>
+        <li><strong>Deployment Risk:</strong> Hardware limitations on real-time inference</li>
+        <li><strong>Scalability:</strong> Local deployment limits remote access</li>
+        <li><strong>User Risk:</strong> Misinterpretation of predictions</li>
+      </ul>
+    </section>
+
+    <section>
+  <h2 class="emoji">🖼️ Project Screenshots</h2>
+      <div class="image-gallery"> 
+      <img src="pictures/Screenshot 2025-06-24 200414.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Fish image uploaded </p>
+      <img src="pictures/Screenshot 2025-06-24 200436.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">The predicted fish image</p>
+       <img src="pictures/Screenshot 2025-06-24 200450.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">The image predictions details</p>
+       <img src="pictures/Screenshot 2025-06-24 200509.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Class and object loss</p>
+       <img src="pictures/Screenshot 2025-06-24 200526.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">F-1 confidence curve </p>
+       <img src="pictures/Screenshot 2025-06-24 200536.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Precision confidance curve</p>
+       <img src="pictures/Screenshot 2025-06-24 200548.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Recall confidence curve</p>
+       <img src="pictures/Screenshot 2025-06-24 200611.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Confusion matrix</p>
+       <img src="pictures/Screenshot 2025-06-24 200620.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">labels</p>
+    </section>
+  </div>
+</section>
+
+  </div>
+  
+  <div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="Enlarged Image">
+  <div class="nav prev">&#10094;</div>
+  <div class="nav next">&#10095;</div>
+</div>
+
+<script src="aqua.js"></script>
+
+</body>
+</html>

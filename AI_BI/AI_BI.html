@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D-Mart AI BI Dashboard</title>
+  <link rel="stylesheet" href="AI_BI.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="../index.html#projects" class="back-button">&#8592; Back to Home</a>
+  <div class="container">
+    <h1>🧠📊 D-Mart AI-Powered Business Intelligence Dashboard</h1>
+
+    <section>
+      <h2 class="emoji">📌 Overview</h2>
+      <p>
+        Welcome to the D-Mart Sales Intelligence Dashboard, a Streamlit-powered web app that leverages machine learning and interactive visualizations to analyze and predict retail sales across Myanmar cities: Yangon, Naypyitaw, and Mandalay.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="emoji">🚀 Features</h2>
+      <ul>
+        <li>📊 <strong>City-Wise Analytics:</strong> Filter and compare sales across cities.</li>
+        <li>⏰ <strong>Sales by Hour:</strong> Discover peak business hours.</li>
+        <li>📅 <strong>Sales by Weekday:</strong> Understand day-of-week performance.</li>
+        <li>🔮 <strong>Sales Prediction:</strong> Predict transaction sales using XGBoost.</li>
+        <li>📈 <strong>Actual vs Predicted Analysis:</strong> Visualize model accuracy.</li>
+        <li>📉 <strong>7-Day Forecast:</strong> Simulated sales forecasts for the next week.</li>
+        <li>🧮 <strong>Model Performance Metrics:</strong> R², MAE, and RMSE insights.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="emoji">🧠 Model Details</h2>
+      <ul>
+        <li><strong>Algorithm:</strong> XGBoost Regressor</li>
+        <li><strong>Target Variable:</strong> Log-transformed Total Sales</li>
+        <li><strong>Input Features:</strong> Customer attributes, product info, datetime features</li>
+        <li><strong>Metrics Used:</strong></li>
+        <ul>
+          <li>📉 Mean Absolute Error (MAE)</li>
+          <li>📉 Root Mean Squared Error (RMSE)</li>
+          <li>🧮 R² Score</li>
+        </ul>
+      </ul>
+    </section>
+    <section>
+      <div class="image-gallery"> 
+      <img src="images/Screenshot 2025-06-29 141650.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Top selling product line section </p>
+      <img src="images/Screenshot 2025-06-29 141658.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">City-wise sales </p>
+       <img src="images/Screenshot 2025-06-29 141707.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Sales by hour of city </p>
+       <img src="images/Screenshot 2025-06-29 141715.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Sales by Day of week of city </p>
+       <img src="images/Screenshot 2025-06-29 141726.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Predict sales from user input </p>
+       <img src="images/Screenshot 2025-06-29 141748.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Prdicted sales </p>
+       <img src="images/Screenshot 2025-06-29 141758.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Sales forecasting of 7 days </p>
+       <img src="images/Screenshot 2025-06-29 141804.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Actual vs predicted sales </p>
+       <img src="images/Screenshot 2025-06-29 141811.png" alt="AI BI DASHBOARD Screenshot" class="cyber-img" />
+      <p class="img-caption">Model performance metrices</p>
+    </section>
+  </div>
+    
+  <div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="Enlarged Image">
+  <div class="nav prev">&#10094;</div>
+  <div class="nav next">&#10095;</div>
+</div>
+
+<script src="AI_BI.js"></script>
+</body>
+</html>
