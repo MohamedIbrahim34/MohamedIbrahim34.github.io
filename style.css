@@ -173,6 +173,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 60px 20px;
+    
   }
 
   .nav-links {
@@ -192,6 +193,7 @@ body {
     font-size: 1.2rem;
     line-height: 2rem;
   }
+ 
 }
 
 /* === EDUCATIONAL BACKGROUND === */
